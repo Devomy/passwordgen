@@ -242,6 +242,12 @@ input[type="checkbox"] {
   .option__container {
     width: 90%;
   }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
 
   #passwordOutput {
     width: 100%;
