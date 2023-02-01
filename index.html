@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="dark__light__mode">
+      <i
+        class="fa-sharp fa-solid fa-moon"
+        title="dark mode"
+        onclick="darkMode()"
+      ></i>
+    </div>
+    <h1 class="logo">HEX<span>K3Y</span></h1>
+    <div class="pass__container">
+      <input type="text" id="passwordOutput" readonly />
+      <i class="fa-solid fa-copy" id="copyButton" title="Copy to clipboard"></i>
+      <i
+        class="fa-solid fa-arrows-rotate"
+        id="generateButton"
+        title="Generate Password"
+      ></i>
+    </div>
+    <div class="option__container">
+      <h3>Customize your paswword</h3>
+      <hr />
+      <div class="password__length">
+        <h4>Password Length</h4>
+        <input type="number" id="passwordLength" min="8" max="50" />
+        <br />
+        <input
+          type="range"
+          class="slider"
+          id="lengthDisplay"
+          min="8"
+          max="50"
+          value="1"
+          title="Password Length"
+        />
+      </div>
+      <div class="options">
+        <div>
+          <input type="checkbox" id="includeUppercase" />
+          <label for="includeUppercase">Uppercase</label>
+        </div>
+        <div>
+          <input type="checkbox" id="includeLowercase" />
+          <label for="includeUppercase">Lowercase</label>
+        </div>
+        <div>
+          <input type="checkbox" id="includeNumbers" />
+          <label for="includeUppercase">Numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" id="includeSpecial" />
+          <label for="includeUppercase">Symbols</label>
+        </div>
+      </div>
+      <button id="resetButton" title="Reset options">Reset</button>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/132548b761.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
