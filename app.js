@@ -94,6 +94,8 @@ function copyPassword() {
   document.execCommand("copy");
 }
 
+copyButton.addEventListener("click", copyPassword);
+
 function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
