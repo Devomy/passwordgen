@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f2f2f2;
@@ -12,6 +18,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: black;
+  padding-top: 40px;
 }
 
 .dark-mode {
@@ -33,6 +40,7 @@ hr {
   flex-direction: row;
   justify-content: end;
   align-items: center;
+  position: absolute;
 }
 
 .fa-moon {
@@ -80,8 +88,7 @@ span {
   display: flex;
   flex-flow: column;
   background-color: #fff;
-  width: 70%;
-
+  width: 100%;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
@@ -232,43 +239,29 @@ input[type="checkbox"] {
   transition-duration: 0.1s;
 }
 
-@media (min-width: 768px) {
-  #resetButton {
-    padding: 0 2.6rem;
-  }
-}
-
 @media (max-width: 700px) {
-  .option__container {
-    width: 90%;
-  }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-  }
-
-  #passwordOutput {
-    width: 100%;
-  }
   .pass__container {
-    width: 300px;
+    width: 100%;
+    border-radius: 0;
   }
-  #generateButton {
-    font-size: 20px;
+  .option__container {
+    min-height: 750px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    border-radius: 0;
   }
-  #copyButton {
-    font-size: 20px;
+  #passwordLength {
+    width: 90%;
   }
-  .options {
-    display: flex;
-    flex-direction: column;
+  #lengthDisplay {
+    width: 500px;
+  }
+  #resetButton {
+    width: 100%;
+    border-radius: 0;
   }
   .dark__light__mode {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
   }
 }
